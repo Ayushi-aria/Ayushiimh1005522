@@ -67,8 +67,46 @@ public class Lab2q6 {
         }
 
         System.out.println("wow !! its working perfectly");
-            }
-
-
+            
+// qustion 7
+    System.out.println("Enter the position");
+    int pos=s.nextInt();
+    int [] arr4=new int[pos];
+    int [] arr5=new int[n-pos];
+    for(int i=0;i<pos;i++)
+    {
+        arr4[i]=arr[i];
+    }
+    for(int i=0;i<pos;i++)
+    {
+        System.out.print(arr4[i] + " ");
+    }
+    System.out.println();
+    for(int i=pos;i<n;i++)
+    {
+        arr5[i-pos]=arr[i];
+    }
+    for(int i=pos;i<n;i++)
+    {
+        System.out.print(arr5[i-pos] + " ");
+    }
+     System.out.println();
+    for(int i=0;i<pos;i++)
+    {
+        for(int j=i+1;j<pos;j++)
+            if(arr4[i]==arr4[j])
+               System.out.println("duplicate of"+arr4[i]+"is at"+j);
+      
+    }
+    
+     for(int i=pos;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+            if(arr5[i-pos]==arr5[j-pos])
+               System.out.println("duplicate of"+arr5[i-pos]+"is at"+(j-pos));
+        
+    }
+    System.out.println();
+    }
 }
 

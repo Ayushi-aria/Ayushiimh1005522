@@ -32,13 +32,13 @@ public class Lab2q7 {
                     {
                         if(arr[i]>arr[i+1])
                         {
-                            System.out.println("the value is " + arr[i]);
+                            System.out.println("the peak value is " + arr[i]);
                         }
                     }
                     else
                     {
                         if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
-                            System.out.println("the value is " + arr[i]);
+                            System.out.println("the peak value is " + arr[i]);
                             
                     }
                 }
